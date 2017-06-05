@@ -3,6 +3,7 @@
 This is a tiny project to quickly give Django models a usable `repr()`.  To use
 it, have your models inherit from `django_auto_repr.AutoRepr`, e.g.:
 
+    from django.db import models
     from django_auto_repr import AutoRepr
 
 
