@@ -1,4 +1,7 @@
-class AutoRepr(object):
+from django.db import models
+
+
+class AutoRepr(models.Model):
     """A model mixin that generates a useful __repr__"""
 
     def _repr_format_field(self, field):
@@ -18,3 +21,6 @@ class AutoRepr(object):
         parts = map(self._repr_format_field, fields)
         attrs = ', '.join(parts)
         return f'{cls.__name__}({attrs})'
+
+    class Meta:
+        abstract = True

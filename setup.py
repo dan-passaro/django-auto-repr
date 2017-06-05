@@ -9,4 +9,7 @@ setup(
     author_email='danpassaro@gmail.com',
     license='MIT',
     py_modules=['django_auto_repr'],
+    install_requires=[
+        'django',
+    ]
 )
