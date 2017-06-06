@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='django-auto-repr',
-    version='1.0',
+    version='1.1',
     description='Give Django models a useful __repr__',
     url='https://github.com/dan-passaro/django-auto-repr',
     author='Dan Passaro',
